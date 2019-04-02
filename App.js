@@ -7,18 +7,14 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-import { StackNavigator } from 'react-navigation'
+import React, {PureComponent} from 'react';
+import Tab from './app/TabNavigator'
 
-const Navigator = StackNavigator(routeConfig, StackNavigatorConfig);
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-
-    );
-  }
+export default class App extends PureComponent {
+    render() {
+        return (
+            <Tab/>
+        )
+    }
 }
-
