@@ -18,8 +18,8 @@ export default class MyPage extends React.Component {
         headerStyle:{backgroundColor:'#7bc6b4'},
         headerTitleStyle:{color:'white'},
     };
-    _1onPress() {
-        alert();
+    _onPress = () => {
+        this.props.navigation.push('MyInfoPage');
     }
     render() {
         return(
@@ -28,7 +28,7 @@ export default class MyPage extends React.Component {
                 <HeaderView/>
                 <SpaceView/>
                 <TouchableWithoutFeedback 
-                onPress={this._1onPress()}>
+                onPress={this._onPress}>
                 <View>
                 <CellView name='账号设置' />
                 </View>
