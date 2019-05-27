@@ -18,8 +18,8 @@ export default class MyPage extends React.Component {
         headerStyle:{backgroundColor:'#7bc6b4'},
         headerTitleStyle:{color:'white'},
     };
-    _onPress = () => {
-        this.props.navigation.push('MyInfoPage');
+    _onPress() {
+        this.props.navigation.navigate('MyInfoPage');
     }
     render() {
         return(
@@ -28,12 +28,17 @@ export default class MyPage extends React.Component {
                 <HeaderView/>
                 <SpaceView/>
                 <TouchableWithoutFeedback 
-                onPress={this._onPress}>
+                onPress={() => this.props.navigation.push('MyInfoPage')}>
                 <View>
-                <CellView name='账号设置' />
+                <CellView name='账号设置1' />
                 </View>
                 </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback 
+                onPress={() => this._onPress()}>
+                <View>
                 <CellView name='基本信息' />
+                </View>
+                </TouchableWithoutFeedback>
                 <CellView name='扩展信息' />
                 <CellView name='我的二维码' />
                 <CellView name='关于' />

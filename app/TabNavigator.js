@@ -10,6 +10,7 @@ import AlumniPage from './pages/alumni/AlumniPage'
 import AppsPage from './pages/apps/AppsPage'
 import NavPage from './pages/nav/NavPage'
 import MyPage from './pages/my/MyPage'
+import MyInfoPage  from './pages/my/MyInfoPage'
 
 const AlumniNav = createStackNavigator({
     nav: AlumniPage,
@@ -23,9 +24,12 @@ const NavPageNav = createStackNavigator({
     nav: NavPage,
 });
 
-const MyPageNav = createStackNavigator({
-    nav: MyPage,
-});
+const MyPageNav = createStackNavigator(
+    {
+        nav: MyPage,
+        MyInfoPage:MyInfoPage,
+    }
+);
 
 export default MainPage = createAppContainer(
     createBottomTabNavigator({
