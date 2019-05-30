@@ -4828,6 +4828,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-native-baidu-map@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npm.taobao.org/react-native-baidu-map/download/react-native-baidu-map-1.0.6.tgz#685af096f0096a514bd7d4fd536c8b257240b207"
+  integrity sha1-aFrwlvAJalFL19T9U2yLJXJAsgc=
+
 react-native-gesture-handler@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.2.0.tgz#19009d9102bedd3bea0dd295ded110262b86227a"
@@ -4845,6 +4850,11 @@ react-native-gesture-handler@~1.0.14:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
+
+react-native-maps@^0.24.2:
+  version "0.24.2"
+  resolved "https://registry.npm.taobao.org/react-native-maps/download/react-native-maps-0.24.2.tgz#19974f967cb0c2e24dab74ca879118e0932571b2"
+  integrity sha1-GZdPlnywwuJNq3TKh5EY4JMlcbI=
 
 react-native-safe-area-view@^0.13.0:
   version "0.13.1"
